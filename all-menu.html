@@ -9,44 +9,38 @@
 </head>
 <body>
     <header>
-        <!-- logo -->
-        <img src="img/logo.jpg" alt="logo rumah padang favorit kita semua">
+    <!-- logo -->
+        <img src="img/feature/logo.jpg" alt="logo rumah padang favorit kita semua">
 
         <!-- judul -->
         <h1>Nasi Padang <br> Kito Senang</h1>
         <!-- nav bar -->
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="all-menu.html">Semua Menu</a>
-            <a href="">Pesan Yuk</a>    
-        </nav>
+        <div id="sampingKanan">
+
+            <!-- <div id='login'>
+                <p id='accountName'></p>
+                <img src="" alt="avatar">
+            </div> -->
+            
+            
+            <form action="search-result.html">
+                <input type="text" id="carimenu" name='carimenu' placeholder="cari menu kesukaanmu">
+                <input type="submit" value="cari">
+            </form>
+
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="all-menu.html">Semua Menu</a>
+                <a href="">Pesan Yuk</a>    
+            </nav>
+        </div>
     </header>
-    <section class='all-menu'>
-        <div>
-            <h3>Rendang</h3>
-            <img src="img/rendang.jpg" alt="rendang">
-        </div>
-        <div>
-            <h3>Kikil Gulai</h3>
-            <img src="img/kikil.jpeg" alt="kikil">
-        </div>
-        <div>
-            <h3>Usus Gulai</h3>
-            <img src="img/usus.jpg" alt="usus">
-        </div>
-        <div>
-            <h3>Lele Goreng</h3>
-            <img src="img/lele.jpg" alt="lele">
-        </div>
-        <div>
-            <h3>Udang Tepung</h3>
-            <img src="img/udang.jpg" alt="udang">
-        </div>
-        <div>
-            <h3>Ampela Ati </h3>
-            <img src="img/ampelaati.jpg" alt="ampela ati">
-        </div>
+    <section id="allMenu">
+
 
     </section>
+
+
+<script src="allmenu.js" type="text/javascript"></script>
 </body>
 </html>

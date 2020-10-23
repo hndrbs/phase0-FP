@@ -132,37 +132,45 @@ section {
 .main {
     width : 68%;
     display: grid;
-    grid-template-rows: 80% 20%;
+    grid-template-rows:80% 20%;
     row-gap: 5%;
     margin: 10px;
 }
 
 #mostFavorite {
-    width: 98%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     margin: 5px auto;
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 5% 96%;
+    row-gap: 6px;
 }
-h1#judulMenu {
+#judulCarousel {
     text-align: center;
-    border: solid;
-    display: inline;
+    display: block;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: auto;
+
 }
-#mosFavorite div#carouselContainer {
+h2#carouselCaption{
+    text-align: center;
+}
+#carouselContainer {
     display: grid;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 10% 80% 10%;
 }
 #imgCarousel{
-    width: 80%;
-    height: 60%;
+    width: 600px;
+    height: 500px;
     margin: auto;
-    display: inline-block;
+    display: block;
 }
-#mostFavorite button {
+#carouselContainer button {
     background-color:white;
-    margin-top: auto;
+    margin: auto 10px;
     display: inline;
+    top: 50%;
 }
 
 #mostFavorite button img {
@@ -175,8 +183,7 @@ h1#judulMenu {
     position: sticky;
     height: fit-content;
     width: 100%;
-    padding: 10px;
-    margin: 10px;
+    margin-top: 50px;
     display: grid;
     grid-template-rows: 33% 67%;
 }
@@ -209,20 +216,27 @@ h1#judulMenu {
 
 /* all menu */
 
-.all-menu {
+#allMenu {
     width: 80%;
     display: grid;
-    grid-template: 50% 50% / 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    /* dua kolom tiga rows */
     margin :10px auto;
 }
 
-.all-menu img {
+#allMenu img {
     width: 300px;
     height: 300px;
-    border-bottom:5px dotted grey;
     margin: 10px 10px;
 }
-.all-menu h3 {
+#allMenu h3 {
     margin-left: 5px;
+}
+#allMenu p {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom:5px dotted grey;
+
 }
 

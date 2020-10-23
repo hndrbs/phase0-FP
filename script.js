@@ -51,12 +51,15 @@ function nextImg (){
     }
 
 
-    let judulMenu = ''
-    
+    let judulMenu = 'Selamat Datang, selamat ngepoin menu kita yaaa <br>'
+    let caption = ''
+
     if (indexCarousel != 0){
-        judulMenu = namaMenu(daftarMenu.favorit[indexCarousel])
+        judulMenu = namaMenu(daftarMenu.favorit[indexCarousel]) + '<br>'
+        caption = daftarMenu.deskripsiFavorit[indexCarousel]
     }
     
+    document.getElementById('carouselCaption').innerHTML = caption
     document.getElementById('judulCarousel').innerHTML = judulMenu
     document.getElementById('imgCarousel').src = `img/${daftarMenu.favorit[indexCarousel]}` 
 }
@@ -69,11 +72,14 @@ function prevImg (){
         indexCarousel--
     }
 
-    let judulMenu = ''
+    let judulMenu = 'Selamat Datang, selamat ngepoin menu kita yaaa <br>'
+    let caption = ''
     if (indexCarousel != 0){
-        judulMenu = namaMenu(daftarMenu.favorit[indexCarousel])
+        judulMenu = namaMenu(daftarMenu.favorit[indexCarousel]) + '<br>'
+        caption = daftarMenu.deskripsiFavorit[indexCarousel]
     }
 
+    document.getElementById('carouselCaption').innerHTML = caption
     document.getElementById('judulCarousel').innerHTML = judulMenu
     document.getElementById('imgCarousel').src = `img/${daftarMenu.favorit[indexCarousel]}`
     
@@ -142,4 +148,4 @@ for (let i = 0; i < 3; i++){
 
 document.getElementById('imgCarousel').src= `img/${daftarMenu.favorit[indexCarousel]}`
 
-
+// ALL MENU SECTION

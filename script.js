@@ -50,6 +50,14 @@ function nextImg (){
         indexCarousel++
     }
 
+
+    let judulMenu = ''
+    
+    if (indexCarousel != 0){
+        judulMenu = namaMenu(daftarMenu.favorit[indexCarousel])
+    }
+    
+    document.getElementById('judulCarousel').innerHTML = judulMenu
     document.getElementById('imgCarousel').src = `img/${daftarMenu.favorit[indexCarousel]}` 
 }
 
@@ -61,6 +69,12 @@ function prevImg (){
         indexCarousel--
     }
 
+    let judulMenu = ''
+    if (indexCarousel != 0){
+        judulMenu = namaMenu(daftarMenu.favorit[indexCarousel])
+    }
+
+    document.getElementById('judulCarousel').innerHTML = judulMenu
     document.getElementById('imgCarousel').src = `img/${daftarMenu.favorit[indexCarousel]}`
     
 }

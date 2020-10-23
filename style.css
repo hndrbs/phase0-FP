@@ -38,7 +38,6 @@ header h1{
 }
 
 #sampingKanan {
-    border: solid;
     display: grid;
     grid-template-rows: repeat(30%);
 }
@@ -82,7 +81,7 @@ nav a{
 /* sidebar section */
 section {
     display: grid;
-    grid-template-columns: 25% 90%;
+    grid-template-columns: 25% 100%;
     column-gap: 5%;
 }
 
@@ -145,8 +144,10 @@ section {
     display: grid;
     grid-template-rows: 10% 90%;
 }
-#mosFavorite h3 {
+h1#judulMenu {
     text-align: center;
+    border: solid;
+    display: inline;
 }
 #mosFavorite div#carouselContainer {
     display: grid;
@@ -160,7 +161,6 @@ section {
 }
 #mostFavorite button {
     background-color:white;
-    border: solid;
     margin-top: auto;
     display: inline;
 }

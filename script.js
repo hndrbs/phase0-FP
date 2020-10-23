@@ -45,13 +45,13 @@ function namaMenu(namaGambar) {
 function nextImg (){
     // bertambah index
     if (indexCarousel == daftarMenu.favorit.length - 1){
-        indexCarousel = 0
+        indexCarousel = 1
     } else {
         indexCarousel++
     }
 
 
-    let judulMenu = 'Selamat Datang, selamat ngepoin menu kita yaaa <br>'
+    let judulMenu = ''
     let caption = ''
 
     if (indexCarousel != 0){
@@ -66,13 +66,13 @@ function nextImg (){
 
 function prevImg (){
     // index berkurang
-    if (indexCarousel == 0){
+    if (indexCarousel == 1){
         indexCarousel = daftarMenu.favorit.length - 1
     } else {
         indexCarousel--
     }
 
-    let judulMenu = 'Selamat Datang, selamat ngepoin menu kita yaaa <br>'
+    let judulMenu = ''
     let caption = ''
     if (indexCarousel != 0){
         judulMenu = namaMenu(daftarMenu.favorit[indexCarousel]) + '<br>'
@@ -85,10 +85,35 @@ function prevImg (){
     
 }
 
-/// DATA SECTION
+// filter keyword pada form search
+function filteringSearch (string){
+    let semuaMenu = {}
+    for (let i of daftarMenu.favorit){
+        if (i == 'bigimg.jpg'){
+            continue
+        } else {
+            semuaMenu[namaMenu(i)] = i //pairing nama-menu : nama-file
+        }
+    }
+    
+    for (let i of daftarMenu.lainnya){
+        semuaMenu[namaMenu(i)] = i
+    }
+
+    let showing = {}
+    for (let menu in semuaMenu){
+        let ada = menu.includes(string) //cek ada kah?
+        if (ada){
+            showing[menu] = semuaMenu[menu]
+        }
+    }
+
+    return showing
+}
+/////////////////////////////////////////// DATA SECTION //////////////
 let indexCarousel = 0
 
-let daftarMenu = {
+const daftarMenu = {
     favorit : [
         'bigImg.jpg',
         'rendang.jpg',
@@ -148,4 +173,6 @@ for (let i = 0; i < 3; i++){
 
 document.getElementById('imgCarousel').src= `img/${daftarMenu.favorit[indexCarousel]}`
 
-// ALL MENU SECTION
+// fiture pencarian
+
+

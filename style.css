@@ -153,7 +153,7 @@ section {
     margin: auto;
 
 }
-h2#carouselCaption{
+h3#carouselCaption{
     text-align: center;
 }
 #carouselContainer {
@@ -161,8 +161,8 @@ h2#carouselCaption{
     grid-template-columns: 10% 80% 10%;
 }
 #imgCarousel{
-    width: 600px;
-    height: 500px;
+    width: 400px;
+    height: 300px;
     margin: auto;
     display: block;
 }
@@ -231,6 +231,8 @@ h2#carouselCaption{
 }
 #allMenu h3 {
     margin-left: 5px;
+    text-align: center;
+    width: 300px;
 }
 #allMenu p {
     width: 300px;

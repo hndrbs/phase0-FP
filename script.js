@@ -1,3 +1,4 @@
+// FUNCTION SECTION ///
 function captilize (string){
 
     let strOut = string[0].toUpperCase()
@@ -40,15 +41,42 @@ function namaMenu(namaGambar) {
     return nama
 }
 
+// function next-previous carousel
+function nextImg (){
+    // bertambah index
+    if (indexCarousel == daftarMenu.favorit.length - 1){
+        indexCarousel = 0
+    } else {
+        indexCarousel++
+    }
+
+    document.getElementById('imgCarousel').src = `img/${daftarMenu.favorit[indexCarousel]}` 
+}
+
+function prevImg (){
+    // index berkurang
+    if (indexCarousel == 0){
+        indexCarousel = daftarMenu.favorit.length - 1
+    } else {
+        indexCarousel--
+    }
+
+    document.getElementById('imgCarousel').src = `img/${daftarMenu.favorit[indexCarousel]}`
+    
+}
+
 /// DATA SECTION
+let indexCarousel = 0
 
 let daftarMenu = {
     favorit : [
+        'bigImg.jpg',
         'rendang.jpg',
         'udang.jpg',
         'lele.jpg'
     ],
     deskripsiFavorit : [
+        '',
         'Tau gak sih? ini tuh rendang terenak di dunia loh, makanya semua orang nyariin menu kami ini, ayok pesen sebelum keabisan',
         'udangnya digoreng sampe kriuk dan hmmmmmmmmmm enak banget',
         'digoreng pake tepung terus disiram pake santan favorit kamu, dijamin yummyy'
@@ -76,7 +104,7 @@ let daftarPelanggan = [
 ]
 
 
-// FUNCTION SECTION ///
+
 
 
 
@@ -94,5 +122,10 @@ for (let i = 0; i < 3; i++){
     document.getElementById('side-other-menus').innerHTML += tambahTag
 }
 
+
+// ketika pencet kiri
+// ubah alamat carousel image
+
+document.getElementById('imgCarousel').src= `img/${daftarMenu.favorit[indexCarousel]}`
 
 

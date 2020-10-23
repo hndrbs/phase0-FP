@@ -127,7 +127,50 @@ section {
     margin-top: 10px;
 }
 
-.sosmed {
+
+/* main section */
+
+.main {
+    width : 68%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    row-gap: 5%;
+    margin: 10px;
+}
+
+#mostFavorite {
+    width: 98%;
+    height: 90%;
+    margin: 5px auto;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+#mosFavorite h3 {
+    text-align: center;
+}
+#mosFavorite div#carouselContainer {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+}
+#imgCarousel{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    display: inline-block;
+}
+#mostFavorite button {
+    background-color:white;
+    border: solid;
+    margin-top: auto;
+    display: inline;
+}
+
+#mostFavorite button img {
+    width: 50px;
+    height: 50x;
+}
+
+#sosmed {
     background-color: whitesmoke;
     position: sticky;
     height: fit-content;
@@ -135,46 +178,33 @@ section {
     padding: 10px;
     margin: 10px;
     display: grid;
+    grid-template-rows: 33% 67%;
+}
+#sosmed div {
+    display: grid;
     grid-template-columns: 33% 33% 33%;
 }
-.sosmed a img {
+
+#sosmed h3{
+    text-align: center;
+}
+
+#sosmed a img {
     width: 30px;
     height: 30px;
     display: block;
     margin: 2px auto;
 }
-.sosmed a p{
+
+#sosmed a p {
     text-align: center;
 }
-.sosmed a{
+
+#sosmed a {
     font-size: 30;
     display: inline;
     text-decoration: none;
     margin: auto 10px;
-}
-
-/* main section */
-
-.main {
-    width : 68%;
-    display: grid;
-    grid-template-rows: 40% 40%;
-    row-gap: 5%;
-    margin: 10px;
-}
-
-.most-favorite {
-    width: 98%;
-    height: 100%;
-    margin: 5px auto;
-}
-.most-favorite img{
-    width: 90%;
-    max-width: 90%;
-    height: 100%;
-    max-height: 95%;
-    margin: 10px auto;
-    display: block;
 }
 
 /* all menu */

@@ -5,6 +5,12 @@ Will be improved soon
 # Features :
  - showing menus autmatically
  - carousel
- - search menus
- - login
+ - search menus (x)
+ - login (x)
  
+
+ # note : 
+ ```
+ All images in this repo are not mine
+ 
+ ```

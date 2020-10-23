@@ -1,0 +1,198 @@
+/* write your code here */
+* 
+/* Header section */
+{
+    font-family: 'Gill Sans',
+    'Gill Sans MT',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    background-color: beige;
+}
+header {
+    top: 0;
+    background-color:white;
+    position: sticky;
+    width: 100%;
+    display: grid;
+    grid-template: 100% / 33% 33% 33%;
+    border-bottom: 1px solid lightgrey;
+
+}
+header img{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5px 20px;
+    display: inline;
+}
+header h1{
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#sampingKanan {
+    border: solid;
+    display: grid;
+    grid-template-rows: repeat(30%);
+}
+#sampingKanan #login {
+    float: right;
+    border: solid;
+}
+#login img{
+    margin-left: 2px;
+    
+}
+#sampingKanan input#carimenu{
+    width: 70%;
+    height: 75%;
+    margin-left: 25px;
+    display: inline;
+
+
+}
+#sampingKanan input{
+    height: 75%;
+    left: 4px;
+}
+
+
+header nav {
+    float:right;
+    bottom: 0;
+    display: grid;
+    grid-template: 100% / 33% 33% 33%;
+}
+nav a{
+    display: inline;
+    text-align: center;
+    margin: auto 8px;
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* sidebar section */
+section {
+    display: grid;
+    grid-template-columns: 25% 90%;
+    column-gap: 5%;
+}
+
+#side-other-menus {
+    display: block;
+    background-color: cornsilk;
+    height: fit-content;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+#side-other-menus h2 {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 800;
+    color: chocolate;
+    text-align: center;
+    margin-bottom: 9px;
+
+}
+#side-other-menus h3{
+    text-align: center;
+}
+#side-other-menus img {
+    width: 220px;
+    height: 200px;
+    display: block;
+    margin: 4px auto;
+}
+#side-other-menus p{
+    text-align: justify;
+    text-align-last: center ;
+    padding-bottom: 10px;
+    border-bottom: solid rgba(0, 0, 0, 0.5);
+}
+#side-other-menus div{
+    text-decoration: none;
+    background-color: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sosmed {
+    background-color: whitesmoke;
+    position: sticky;
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.sosmed a img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 2px auto;
+}
+.sosmed a p{
+    text-align: center;
+}
+.sosmed a{
+    font-size: 30;
+    display: inline;
+    text-decoration: none;
+    margin: auto 10px;
+}
+
+/* main section */
+
+.main {
+    width : 68%;
+    display: grid;
+    grid-template-rows: 40% 40%;
+    row-gap: 5%;
+    margin: 10px;
+}
+
+.most-favorite {
+    width: 98%;
+    height: 100%;
+    margin: 5px auto;
+}
+.most-favorite img{
+    width: 90%;
+    max-width: 90%;
+    height: 100%;
+    max-height: 95%;
+    margin: 10px auto;
+    display: block;
+}
+
+/* all menu */
+
+.all-menu {
+    width: 80%;
+    display: grid;
+    grid-template: 50% 50% / 33% 33% 33%;
+    margin :10px auto;
+}
+
+.all-menu img {
+    width: 300px;
+    height: 300px;
+    border-bottom:5px dotted grey;
+    margin: 10px 10px;
+}
+.all-menu h3 {
+    margin-left: 5px;
+}
+
